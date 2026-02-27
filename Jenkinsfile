@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git url: 'https://github.com/longflewtinku/spring-petclinic.git',
+                git url: 'https://github.com/srinivaskadudhuram/spring-petclinic.git',
                     branch: 'main' 
             }
         }
@@ -20,6 +20,7 @@ pipeline {
                       -Dsonar.host.url=https://sonarcloud.io/ \
                       -Dsonar.login=$SONAR_TOKEN""" 
             }
+
           }  
         }
      }  
